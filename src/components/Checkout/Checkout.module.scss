@@ -1,0 +1,104 @@
+@mixin flexcenter () {
+	display: flex;
+	align-items: center;
+}
+
+.Checkout {
+    display: grid;
+    grid-template-areas:
+    '. tit .'
+    'steps steps steps';
+    color: white;
+    .Wrapper {
+      max-width: 570px;
+      margin: 0 auto;
+      padding-top: 20px;
+      .Checkout__tittle {
+        grid-area: tit;
+        align-self: center;
+        color: white;
+        font-size: 34px;
+        margin-bottom: 5px;
+      }
+      .Steps {
+        grid-area: steps;
+        @include flexcenter();
+        .FirstItem {
+          @include flexcenter();
+          .MuiStepIconRoot.MuiStepIconActive {
+            color: #90caf9;
+          }
+          .MuiSvgIconRoot {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            font-size: 1.5rem;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            flex-shrink: 0;
+            user-select: none;
+          }
+          //.Checkout__wayBlock 
+          .MuiStepIconText {
+            fill: rgba(0, 0, 0, 0.87);
+            font-size: 0.75rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+          }
+        }
+        .SecondItem {
+          @include flexcenter();
+          .MuiSvgIconRoot {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            font-size: 1.5rem;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            flex-shrink: 0;
+            user-select: none;
+          }
+          .MuiStepIconText {
+            fill: rgba(0, 0, 0, 0.87);
+            font-size: 0.75rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+          }
+        }
+        .ThirdItem {
+          @include flexcenter();
+          .MuiSvgIconRoot {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            font-size: 1.5rem;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            flex-shrink: 0;
+            user-select: none;
+          }
+          .MuiStepIconText {
+            fill: rgba(0, 0, 0, 0.87);
+            font-size: 0.75rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+          }
+        }
+        .MuiStepConnectorLineHorizontal {
+          border-top-style: solid;
+          border-top-width: 1px;
+        }
+        .MuiStepConnectorLine {
+          display: block;
+          border-color: #757575;
+        }
+      }
+    }
+  }
+.MuiPaperS-root {
+    color: #fff;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #424242;
+    text-shadow: 0 0 black;
+}
+text {
+  display: block;
+  white-space: nowrap;
+}
