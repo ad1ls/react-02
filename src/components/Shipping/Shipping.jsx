@@ -7,9 +7,12 @@ const Shipping = (props) => {
     return (
         <div className={s.Shipping}>
             <div className={s.Shipping__tittle}>
-                 <h6>Shipping address</h6>
+               Shipping address
             </div>
-           <InputArea/>
+           <div className="Shipping__input">
+             <InputArea name="First Name *"/>
+             <InputArea name="Second Name *"/>
+           </div>
         </div>
     )
 }
