@@ -1,15 +1,19 @@
 import React from 'react';
 import './App.scss';
 import Checkout from './components/Checkout/Checkout';
+import Shipping from './components/Shipping/Shipping';
  
 const App = (props) => {
   return (
     <div className="App">
       <header className="Header">
-        <h6>Company name</h6>
+        <h1>Company name</h1>
       </header>
       <main className="Main">  
-        <Checkout/>
+        <div className="Wrapper">
+          <Checkout/>
+          <Shipping/>
+        </div>
       </main>
     </div>
   );

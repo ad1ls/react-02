@@ -1,0 +1,39 @@
+@mixin flexcenter () {
+	display: flex;
+	align-items: center;
+}
+
+.StepItem {
+    @include flexcenter();
+    .MuiStepIconRoot.MuiStepIconActive {color: #90caf9}
+    .MuiSvgIconRoot {
+       fill: currentColor;
+       width: 1em;
+       height: 1em;
+       display: inline-block;
+       font-size: 1.5rem;
+       transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+       flex-shrink: 0;
+       user-select: none;
+    }
+    .MuiStepIconText {
+       fill: rgba(0, 0, 0, 0.87);
+       font-size: 0.75rem;
+    }
+    .MuiStepIconRoot {
+       color: rgba(255, 255, 255, 0.5);
+       display: block;
+    }   
+}  
+text {
+  display: block;
+  white-space: nowrap;
+}
+.Checkout__wayBlock {
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.7);
+     }
+.Checkout__wayBlock_active {
+     color: #fff;
+     font-weight: 500;
+}
