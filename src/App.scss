@@ -1,24 +1,24 @@
+@mixin flexcenter () {display: flex;align-items: center;}
+
 .App {
   box-sizing: border-box;
   background-color: #121212;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 .Header {
-  display: flex;
-  align-items: center;
+  @include flexcenter();
   height: 64px;
   background-color: #212121;
   color: #fff;
   margin: 0 auto;
+  font-weight: 700;
+  font-size: 22 px;
   -webkit-box-shadow: 0px 1px 6px 0px rgba(12, 12, 12, 0.75);
   -moz-box-shadow:    0px 1px 6px 0px rgba(12, 12, 12, 0.75);
   box-shadow:         0px 1px 6px 0px rgba(12, 12, 12, 0.75);
-  h1 {
-    margin-left: 18px;
-    font-weight: 700;
-    font-size: 22 px;
-  }
+  h1 {margin-left: 18px;}
 }
 .Main {
   background-color: #424242;
@@ -31,5 +31,4 @@
   max-width: 550px;
   margin: 0 auto;
   padding-top: 20px;
-
 }

@@ -23,17 +23,14 @@
     .MuiStepIconRoot {
        color: rgba(255, 255, 255, 0.5);
        display: block;
-    }   
+    } 
+     text { display: block; white-space: nowrap; }
+    .Checkout__wayBlock {
+       margin-left: 5px;
+       color: rgba(255, 255, 255, 0.7);
+    }
+    .Checkout__wayBlock_active {
+       color: #fff;
+       font-weight: 500;
+    }  
 }  
-text {
-  display: block;
-  white-space: nowrap;
-}
-.Checkout__wayBlock {
-    margin-left: 5px;
-    color: rgba(255, 255, 255, 0.7);
-     }
-.Checkout__wayBlock_active {
-     color: #fff;
-     font-weight: 500;
-}
