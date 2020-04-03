@@ -14,7 +14,8 @@
          'c c'
          'd d'
          'e f'
-         'g h';
+         'g h'
+         'i i';
         .Shipping__inputFirst {grid-area: a;}
         .Shipping__inputLast {grid-area: b;}
         .Shipping__inputLine1 {grid-area: c;}
@@ -23,5 +24,6 @@
         .Shipping__inputState {grid-area: f;}
         .Shipping__inputZip {grid-area: g;}
         .Shipping__inputCountry {grid-area: h;}
+        .Shipping__inputCheckbox {grid-area: i;}
     }
 }

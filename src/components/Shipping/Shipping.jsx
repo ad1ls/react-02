@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Shipping.module.scss';
 import InputArea from './InputArea/InputArea';
+import Checkbox from './Checkbox/Checkbox';
 
 
 const Shipping = (props) => {
@@ -16,8 +17,9 @@ const Shipping = (props) => {
                 <div className={s.Shipping__inputLine2}><InputArea name="Address line 2"/></div>
                 <div className={s.Shipping__inputCity}><InputArea name="City *"/></div>
                 <div className={s.Shipping__inputState}><InputArea name="State/Province/Region *"/></div>
-                <div className={s.Shipping__inputZip}><InputArea name="Zip / Postal code*"/></div>
+                <div className={s.Shipping__inputZip}><InputArea name="Zip / Postal code *"/></div>
                 <div className={s.Shipping__inputCountry}><InputArea name="Country *"/></div>
+                <div className={s.Shipping__inputCheckbox}><Checkbox/></div>
            </div>
         </div>
     )
