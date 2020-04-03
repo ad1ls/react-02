@@ -7,11 +7,17 @@ const Shipping = (props) => {
     return (
         <div className={s.Shipping}>
             <div className={s.Shipping__tittle}>
-               Shipping address
+                 Shipping address
             </div>
-           <div className="Shipping__input">
-             <InputArea name="First Name *"/>
-             <InputArea name="Second Name *"/>
+           <div className={s.Shipping__input}>
+                <div className={s.Shipping__inputFirst}><InputArea name="First Name *"/></div>
+                <div className={s.Shipping__inputLast}><InputArea name="Last Name *"/></div>
+                <div className={s.Shipping__inputLine1}><InputArea name="Address line 1 *"/></div>
+                <div className={s.Shipping__inputLine2}><InputArea name="Address line 2"/></div>
+                <div className={s.Shipping__inputCity}><InputArea name="City *"/></div>
+                <div className={s.Shipping__inputState}><InputArea name="State/Province/Region *"/></div>
+                <div className={s.Shipping__inputZip}><InputArea name="Zip / Postal code*"/></div>
+                <div className={s.Shipping__inputCountry}><InputArea name="Country *"/></div>
            </div>
         </div>
     )

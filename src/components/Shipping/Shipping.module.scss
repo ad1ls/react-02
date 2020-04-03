@@ -6,8 +6,22 @@
          margin-bottom: 30px;
     }
     .Shipping__input {
-        display: flex;
-        align-items: center;
+        display: grid;
         justify-content: center;
+        grid-gap: 3rem;
+        grid-template-areas:
+         'a b'
+         'c c'
+         'd d'
+         'e f'
+         'g h';
+        .Shipping__inputFirst {grid-area: a;}
+        .Shipping__inputLast {grid-area: b;}
+        .Shipping__inputLine1 {grid-area: c;}
+        .Shipping__inputLine2 {grid-area: d;}
+        .Shipping__inputCity {grid-area: e;}
+        .Shipping__inputState {grid-area: f;}
+        .Shipping__inputZip {grid-area: g;}
+        .Shipping__inputCountry {grid-area: h;}
     }
 }
